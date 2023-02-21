@@ -7,40 +7,80 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import React from "react";
+
 import { HabeshaDress } from "../models/habesha-dress";
+import "react-slideshow-image/dist/styles.css";
+import { Fade } from "react-slideshow-image";
+import { useRef, useState } from "react";
 
 const ItemsList = () => {
+  const [isOverImg, setIsOverImg] = useState(false);
+  const [src, setSrc] = useState<number | null>(null);
+  const fadeRef = useRef(null);
+
+  const handleMouseLeave = () => {
+    setSrc(null);
+    setIsOverImg(false);
+  };
+
   return (
-    <Box className="flex flex-wrap justify-center gap-[5%] mt-[10rem]">
-      {HabeshaDress.map((dress) => (
-        <Card className="flex flex-col justify-center items-center mb-10">
-          <CardMedia
-            component="img"
-            image={dress.image}
-            className="object-cover object-bottom"
-          />
-          <CardContent className="flex flex-col gap-2">
-            <h1 className="font-bold font-raleway text-2xl">{dress.name}</h1>
+    <>
+      <Box className="flex flex-wrap justify-center gap-[5%] mt-[10rem] px-5">
+        {HabeshaDress.map((dress, index) => (
+          <Box
+            className="flex flex-col gap-3 shadow-md w-[15rem] mb-10"
+            key={index}
+          >
+            <Box
+              className="slide-container w-[15rem]"
+              onMouseEnter={() => {
+                setSrc(index + 1);
+                setIsOverImg(true);
+              }}
+              onMouseLeave={handleMouseLeave}
+            >
+              <Fade
+                autoplay={isOverImg && dress.id === src ? true : false}
+                arrows={false}
+                infinite
+                defaultIndex={index}
+                duration={1500}
+                pauseOnHover={false}
+              >
+                {HabeshaDress.map((fadeImage, i) => (
+                  <div className="each-fade w-fit" key={i}>
+                    <div className="image-container w-fit">
+                      <img src={fadeImage.image} />
+                    </div>
+                  </div>
+                ))}
+              </Fade>
+            </Box>
+
+            <h1 className="font-bold font-raleway text-2xl text-center">
+              {dress.name}
+            </h1>
             <p className="text-center font-light font-montserrat text-orange ">
               {dress.size}
             </p>
+
             <p className="text-center  text-3xl text-orange">
               {dress.price} Birr
             </p>
-          </CardContent>
-          <CardActions>
-            <Button
-              size="large"
-              variant="contained"
-              className="bg-orange text-xl mb-4 hover:shadow-black hover:shadow-sm hover:bg-deepOrage"
-            >
-              Book
-            </Button>
-          </CardActions>
-        </Card>
-      ))}
-    </Box>
+
+            <Box className="flex justify-center">
+              <Button
+                size="large"
+                variant="contained"
+                className="bg-orange text-xl mb-4 hover:shadow-black hover:shadow-sm hover:bg-deepOrage w-fit"
+              >
+                Book
+              </Button>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </>
   );
 };
 

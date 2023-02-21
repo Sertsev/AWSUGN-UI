@@ -33,7 +33,7 @@ const Hero = () => {
             </h1>
           </Box>
 
-          <p className="text-white font-montserrat tracking-[0.2rem]	text-xs sm:text-sm w-[20rem] sm:w-[25rem] xl:w-[35rem]">
+          <p className="text-white font-montserrat tracking-[0.1rem]	text-xs sm:text-sm w-[20rem] sm:w-[25rem] xl:w-[35rem]">
             AWSUGN is a renting platform powered by ASA Technologies. It is
             aiming to relieves customers from the tiresome process of searching
             for clothes by providing an online platform that allows choosing and
