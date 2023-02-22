@@ -28,7 +28,7 @@ const Hero = () => {
               alt="awsung logo"
               className="w-[15rem] mb-0 mx-auto"
             />
-            <h1 className="text-orange text-xl tracking-widest text-center font-raleway font-bold">
+            <h1 className="text-orange text-xl tracking-widest text-center font-raleway ">
               You need it we lend it!!
             </h1>
           </Box>
