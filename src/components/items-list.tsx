@@ -18,11 +18,6 @@ const ItemsList = () => {
   const [src, setSrc] = useState<number | null>(null);
   const fadeRef = useRef(null);
 
-  const handleMouseLeave = () => {
-    setSrc(null);
-    setIsOverImg(false);
-  };
-
   return (
     <>
       <Box className="flex flex-wrap justify-center gap-[5%] mt-[10rem] px-5">
@@ -37,7 +32,10 @@ const ItemsList = () => {
                 setSrc(index + 1);
                 setIsOverImg(true);
               }}
-              onMouseLeave={handleMouseLeave}
+              onMouseLeave={() => {
+                setSrc(null);
+                setIsOverImg(false);
+              }}
             >
               <Fade
                 autoplay={isOverImg && dress.id === src ? true : false}
