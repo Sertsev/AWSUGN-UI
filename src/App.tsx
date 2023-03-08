@@ -18,6 +18,7 @@ function App() {
           <Route path="/aboutus" element={<AboutusPage />} />
         </Routes>
       </Router>
+      <Footer />
     </Box>
   );
 }

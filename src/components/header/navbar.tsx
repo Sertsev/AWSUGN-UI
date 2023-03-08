@@ -23,7 +23,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            to="/"
+            to="/aboutus"
             className="hover:text-black text-orange text-md lg:text-lg"
           >
             About Us
