@@ -6,7 +6,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import HiddenMenu from "./hidden-menu";
 import Navbar from "./navbar";
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => {

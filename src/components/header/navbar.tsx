@@ -1,33 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LoggedIn from "./loggedin";
 const Navbar = () => {
+  const navLinkStyles = ({ isActive }: any) => {
+    return {
+      color: isActive ? "black" : "#F36F2E",
+    };
+  };
   return (
     <nav className=" hidden flex-1 justify-between items-center md:flex ">
       <ul className="flex gap-5 lg:gap-16">
         <li>
-          <Link
+          <NavLink
             to="/"
+            style={navLinkStyles}
             className="hover:text-black text-orange text-md lg:text-lg"
           >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/browse"
+            style={navLinkStyles}
             className="hover:text-black text-orange text-md lg:text-lg"
           >
             Browse Now
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/aboutus"
+            style={navLinkStyles}
             className="hover:text-black text-orange text-md lg:text-lg"
           >
             About Us
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <div className="flex gap-5 lg:gap-10">
