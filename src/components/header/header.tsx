@@ -30,7 +30,7 @@ const Header = () => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } h-[100vh] absolute top-0 right-0 w-[60%] bg-white z-10 animate-sliderightmenu`}
+        } h-[100vh]  top-0 right-0 w-[60%] bg-white z-10 animate-sliderightmenu fixed`}
       >
         <HiddenMenu closeMenu={closeMenu} />
       </div>
