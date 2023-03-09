@@ -1,7 +1,7 @@
-import img1 from "../assets/img1.png";
-import img2 from "../assets/img2.png";
-import img4 from "../assets/img4.png";
-import img3 from "../assets/img3.png";
+import img1 from "../assets/nw_img1.png";
+import img2 from "../assets/nw_img2.png";
+import img3 from "../assets/nw_img3.png";
+import img4 from "../assets/nw_img4.png";
 
 export const HabeshaDress = [
   {
@@ -10,6 +10,7 @@ export const HabeshaDress = [
     size: "Medium Size",
     name: "Habesha Dress",
     price: "1500",
+    oldPrice: "9000",
   },
   {
     id: 2,
@@ -17,19 +18,22 @@ export const HabeshaDress = [
     size: "Medium Size",
     name: "Habesha Dress",
     price: "2000",
+    oldPrice: "9000",
   },
   {
     id: 3,
-    image: img4,
-    size: "Medium Size",
-    name: "Habesha Dress",
-    price: "1500",
-  },
-  {
-    id: 4,
     image: img3,
     size: "Medium Size",
     name: "Habesha Dress",
+    price: "1500",
+    oldPrice: "9000",
+  },
+  {
+    id: 4,
+    image: img4,
+    size: "Medium Size",
+    name: "Habesha Dress",
     price: "2000",
+    oldPrice: "9000",
   },
 ];

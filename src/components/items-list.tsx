@@ -12,6 +12,7 @@ import { HabeshaDress } from "../models/habesha-dress";
 import "react-slideshow-image/dist/styles.css";
 import { Fade } from "react-slideshow-image";
 import { useRef, useState } from "react";
+import topRectangle from "../assets/Rectangle1.png";
 
 const ItemsList = () => {
   const [isOverImg, setIsOverImg] = useState(false);
@@ -20,6 +21,12 @@ const ItemsList = () => {
 
   return (
     <>
+      <div className="border-t-2 border-orange mt-20 relative">
+        <img src={topRectangle} alt="" className=" w-[10rem] sm:w-[15rem]" />
+        <p className="font-yatra text-white absolute z-10 top-1 sm:top-2 left-7 text-xl sm:text-3xl">
+          Latest
+        </p>
+      </div>
       <Box className="flex flex-wrap justify-center gap-[5%] mt-[10rem] px-5">
         {HabeshaDress.map((dress, index) => (
           <Box
@@ -27,7 +34,7 @@ const ItemsList = () => {
             key={index}
           >
             <Box
-              className="slide-container w-[15rem]"
+              className="w-[15rem]"
               onMouseEnter={() => {
                 setSrc(index + 1);
                 setIsOverImg(true);
@@ -47,7 +54,7 @@ const ItemsList = () => {
               >
                 {HabeshaDress.map((fadeImage, i) => (
                   <div className="each-fade w-fit" key={i}>
-                    <div className="image-container w-fit">
+                    <div className=" w-fit">
                       <img src={fadeImage.image} />
                     </div>
                   </div>
