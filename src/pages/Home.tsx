@@ -1,4 +1,5 @@
 import React from "react";
+import SignIn from "../components/header/signin";
 import Hero from "../components/hero";
 import ItemsList from "../components/items-list";
 import Latest from "../components/latest";
