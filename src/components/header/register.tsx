@@ -54,7 +54,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
             type="text"
             name="username"
             placeholder="username"
-            className="w-[20rem] border-deepOrage outline-none border p-4 rounded-md "
+            className="w-[20rem] border-deepOrage outline-orange border p-4 rounded-md "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.username}
@@ -68,7 +68,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
             type="text"
             name="firstname"
             placeholder="first name"
-            className="w-[20rem] border-deepOrage outline-none border p-4 rounded-md "
+            className="w-[20rem] border-deepOrage outline-orange border p-4 rounded-md "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.firstname}
@@ -82,7 +82,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
             type="text"
             name="middlename"
             placeholder="middle name"
-            className="w-[20rem] border-deepOrage outline-none border p-4 rounded-md "
+            className="w-[20rem] border-deepOrage outline-orange border p-4 rounded-md "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.middlename}
@@ -96,7 +96,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
             type="text"
             name="lastname"
             placeholder="last name"
-            className="w-[20rem] border-deepOrage outline-none border p-4 rounded-md "
+            className="w-[20rem] border-deepOrage outline-orange border p-4 rounded-md "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.lastname}
@@ -110,7 +110,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
             type="text"
             name="email"
             placeholder="email"
-            className="w-[20rem] border-deepOrage outline-none border p-4 rounded-md "
+            className="w-[20rem] border-deepOrage outline-orange border p-4 rounded-md "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
@@ -122,7 +122,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
             type="text"
             name="password"
             placeholder="password"
-            className="w-[20rem] border-deepOrage outline-none border p-4 rounded-md "
+            className="w-[20rem] border-deepOrage outline-orange border p-4 rounded-md "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.password}
@@ -136,7 +136,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
             type="text"
             name="confirmPassword"
             placeholder="confirm password"
-            className="w-[20rem] border-deepOrage outline-none border p-4 rounded-md "
+            className="w-[20rem] border-deepOrage outline-orange border p-4 rounded-md "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.confirmPassword}
@@ -149,7 +149,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
 
           <select
             name="gender"
-            className="w-[20rem] border-deepOrage outline-none border p-4 rounded-md "
+            className="w-[20rem] border-deepOrage outline-orange border p-4 rounded-md "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.gender}
@@ -169,7 +169,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
             type="text"
             name="phone"
             placeholder="phone"
-            className="w-[20rem] border-deepOrage outline-none border p-4 rounded-md "
+            className="w-[20rem] border-deepOrage outline-orange border p-4 rounded-md "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.phone}
@@ -177,7 +177,7 @@ const Register: FC<{ cancleRegister: () => void }> = ({ cancleRegister }) => {
           <p className="text-red">
             {formik.errors.phone && formik.touched.phone && formik.errors.phone}
           </p>
-          <p className="text-orange">
+          <p className="text-orange mb-10">
             Make sure to include country code (+251...)
           </p>
 
