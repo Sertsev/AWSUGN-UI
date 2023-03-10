@@ -23,13 +23,11 @@ const SignIn: FC<{ cancle: () => void }> = ({ cancle }) => {
             type="text"
             placeholder="username"
             className="w-[20rem] border-orange outline-none border p-4 rounded-md "
-            required
           />
           <input
             type="password"
             placeholder="password"
             className="w-[20rem] border-orange outline-none border p-4 rounded-md "
-            required
           />
           <Link to={""} className="text-orange hover:text-deepOrage">
             Forgot password?
