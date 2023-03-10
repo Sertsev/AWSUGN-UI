@@ -13,7 +13,7 @@ const Hero = () => {
     <div className="relative">
       <div className="flex flex-col gap-10 justify-center items-center md:items-start">
         <div className="flex flex-col  bg-orange  justify-center items-center md:items-start h-[22rem] gap-[1rem] w-[100vw]">
-          <div className="w-[20rem] sm:w-[25rem] xl:w-[35rem]  ">
+          <div className="w-[20rem] sm:w-[25rem] xl:w-[55rem] px-[0%] 2xl:px-[10%] ">
             <p className="font-yatra text-[4rem] text-white md:ml-[5rem]">
               Pay Less
             </p>
@@ -82,7 +82,7 @@ const Hero = () => {
           </form>
         </div>
       </div>
-      <div className="absolute top-5 right-[1rem] lg:right-[10%] 2xl:right-[20%] hidden md:block">
+      <div className="absolute top-5 right-[1rem] lg:right-[10%] 2xl:right-[10%] hidden md:block">
         {/* <img
           src={bgImg}
           alt="background image"

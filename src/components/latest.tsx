@@ -68,9 +68,11 @@ const Latest = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center">
         <Link
           to="/browse"
-          className="border text-orange border-orange text-xl px-10 py-4 font-sanchez rounded-lg hover:bg-orange transition hover:text-white shadow-orange shadow-lg "
+          className="border text-orange border-orange text-lg sm:text-xl px-8 py-2 sm:px-10 sm:py-4 font-sanchez rounded-lg hover:bg-orange transition hover:text-white shadow-orange shadow-lg "
         >
           Browse More
         </Link>
