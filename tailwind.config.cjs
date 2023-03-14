@@ -17,6 +17,11 @@ module.exports = {
       orange: "#F36F2E",
       red: "#Ff0000",
       deepOrage: "#ff9100",
+      veryLightBrown: "#E6DACC",
+      LightBrown: "#C8B59E",
+      brown: "#876156",
+      darkBrown: "#543B31",
+      rectangleBrown: "#B27C5E",
     },
     extend: {
       animation: {

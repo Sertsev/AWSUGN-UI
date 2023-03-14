@@ -1,11 +1,11 @@
 import React from "react";
-import topRectangle from "../assets/Rectangle1.png";
+import topRectangle from "../assets/Rectangle 9.png";
 import { OccasionalDress } from "../models/occasional-dress";
 
 const Occasions = () => {
   return (
     <>
-      <div className="border-t-2 border-orange mt-20 relative">
+      <div className="border-t-2 border-rectangleBrown mt-20 relative -z-10">
         <img src={topRectangle} alt="" className=" w-[10rem] sm:w-[15rem]" />
         <p className="font-yatra text-white absolute z-10 top-1 sm:top-2 left-7 text-xl sm:text-3xl">
           Occasions

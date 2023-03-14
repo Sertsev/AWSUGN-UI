@@ -42,7 +42,7 @@ const Header = () => {
         />
         <Navbar signin={signInClicked} register={registerClicked} />
         <button className="block md:hidden" onClick={openMenu}>
-          <MenuIcon className="text-4xl text-orange" />
+          <MenuIcon className="text-4xl text-brown" />
         </button>
 
         <div
